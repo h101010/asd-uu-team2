@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="asd_project" version="4">
+  <OBJECT>
+    <ID name="asd_project" mc="Standard.Package" uid="4d38071f-249f-4d38-8921-3b2a440072fc"/>
+    <PID name="asd_project" mc="Standard.Project" uid="ffda258e-6d64-4113-bbf8-8aab66475774"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[asd_project]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="Standard.ClassDiagram" uid="ae3c77dc-8a12-4bae-b958-b7c9aa326ab1"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
