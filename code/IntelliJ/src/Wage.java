@@ -4,20 +4,20 @@ import java.util.*;
 public class Wage implements Invoice {
 
 	private float amount;
-	private Date date;
+	private Date dueDate, createdDate;
     private Responder responder;
-	private List<Match> jobs;
+	private List<Match> jobsList;
 
-    public Wage(float amount, Date date, Responder responder) {
+    public Wage(float amount, Date dueDate, Responder responder) {
         this.amount = amount;
-        this.date = date;
+        this.dueDate = dueDate;
+        this.createdDate = new Date();
         this.responder = responder;
-        this.jobs = responder.getCompletedJobs();
+        this.jobsList = responder.getCompletedJobs();
     }
 
     public void pay() {
     	//Do payment stuff
-
     }
     
     public void setAmount(float amount) {
@@ -28,12 +28,20 @@ public class Wage implements Invoice {
     	return this.amount;
     }
     
-    public void setDate(Date date) {
-    	this.date = date;
+    public void setDueDate(Date dueDate) {
+    	this.dueDate = dueDate;
     }
     
-    public Date getDate() {
-    	return this.date;
+    public Date getDueDate() {
+    	return this.dueDate;
+    }
+    
+    public void setCreatedDate(Date createdDate) {
+    	this.createdDate = createdDate;
+    }
+    
+    public Date getCreatedDate() {
+    	return this.createdDate;
     }
     
     public void setResponder(Responder responder) {
