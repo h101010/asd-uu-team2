@@ -8,13 +8,13 @@ public class Wage implements Invoice {
     private Responder responder;
 	private List<Match> jobs;
 
-    public Wage(float amount, Date date, Responder responder, List<Match> jobs) {
-    	this.amount = amount;
-    	this.date = date;
-    	this.responder = responder;
-    	this.jobs = jobs;
+    public Wage(float amount, Date date, Responder responder) {
+        this.amount = amount;
+        this.date = date;
+        this.responder = responder;
+        this.jobs = responder.getCompletedJobs();
     }
-    
+
     public void pay() {
     	//Do payment stuff
 

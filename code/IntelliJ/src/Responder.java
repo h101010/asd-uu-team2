@@ -10,7 +10,9 @@ public class Responder implements User {
      * Default constructor
      */
     public Responder() {
+        profile = new Profile();
     }
+
 
     /**
      * 

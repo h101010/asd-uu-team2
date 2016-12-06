@@ -26,7 +26,14 @@ public class InvoiceCreator {
         SubscriptionModel subModel =  user.getProfile().getSubscriptionModel();
         Date dueDate = subModel.getDueDate();
         float amount = subModel.calculateAmount(user.getCompletedJobs());
-        Invoice invoice = new Invoice(amount, dueDate, user);
+        Invoice invoice;
+        if (user instanceof Requester) {
+            invoice = new Bill(amount, dueDate, (Requester) user);
+        } else {
+            invoice = new Wage(amount, dueDate, (Responder) user);
+        }
+
+
         Notify notify = Notify.getInstance();
         notify.notifyUser(user, invoice);
         return invoice;

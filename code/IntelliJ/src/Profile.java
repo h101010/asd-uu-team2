@@ -17,6 +17,9 @@ public class Profile {
      * Default constructor
      */
     public Profile() {
+        personalDetails = new PersonalDetails();
+        address = new Address();
+        certificates = new Certificates();
     }
 
 

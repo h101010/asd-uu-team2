@@ -6,33 +6,22 @@ import java.util.*;
  */
 public class PersonalDetails {
 
-    /**
-     * Default constructor
-     */
-    public PersonalDetails() {
-    }
-
-    /**
-     * 
-     */
     private String Email;
 
-    /**
-     * 
-     */
     private String Telephone;
 
-    /**
-     * 
-     */
     private String Name;
+
+
+    public PersonalDetails() {
+    }
 
 
     public String getEmail() {
         return Email;
     }
 
-    public void setEmail(string email) {
+    public void setEmail(String email) {
         Email = email;
     }
 
@@ -40,15 +29,15 @@ public class PersonalDetails {
         return Telephone;
     }
 
-    public void setTelephone(string telephone) {
+    public void setTelephone(String telephone) {
         Telephone = telephone;
     }
 
-    public string getName() {
+    public String getName() {
         return Name;
     }
 
-    public void setName(string name) {
+    public void setName(String name) {
         Name = name;
     }
 }
