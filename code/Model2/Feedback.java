@@ -2,44 +2,57 @@
 import java.util.*;
 
 /**
- * 
+ * feedback for a job
  */
 public class Feedback {
 
-    /**
-     * Default constructor
-     */
-    public Feedback() {
+    private Date date;
+
+    private int rating;
+
+    private String comment;
+
+    private Profile creator;
+
+
+    public Feedback(Profile creator, int rating, String comment) {
+        this.date = new Date();
+        this.rating = rating;
+        this.comment = comment;
+        this.creator = creator;
     }
 
-    /**
-     * 
-     */
-    private DateTime Date;
 
-    /**
-     * 
-     */
-    private int Rating;
+    public Date getDate() {
+        return date;
+    }
 
-    /**
-     * 
-     */
-    private String Comment;
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
-    /**
-     * 
-     */
-    private Profile Creator;
+    public int getRating() {
+        return rating;
+    }
 
-    /**
-     * 
-     */
-    private Profile Recipient;
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
 
+    public String getComment() {
+        return comment;
+    }
 
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 
+    public Profile getCreator() {
+        return creator;
+    }
 
-
+    public void setCreator(Profile creator) {
+        this.creator = creator;
+    }
 
 }

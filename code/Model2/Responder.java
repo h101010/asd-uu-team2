@@ -17,6 +17,34 @@ public class Responder implements User {
      */
     private List<Match> OngoingJobs;
 
+    public List<Match> getOngoingJobs() {
+        return OngoingJobs;
+    }
+
+    public void setOngoingJobs(List<Match> ongoingJobs) {
+        OngoingJobs = ongoingJobs;
+    }
+
+    public List<Match> getCompletedJobs() {
+        return CompletedJobs;
+    }
+
+    public void setCompletedJobs(List<Match> completedJobs) {
+        CompletedJobs = completedJobs;
+    }
+
+    public List<Invoice> getInvoices() {
+        return Invoices;
+    }
+
+    public void setInvoices(List<Invoice> invoices) {
+        Invoices = invoices;
+    }
+
+    public Profile getProfile() {
+        return profile;
+    }
+
     /**
      * 
      */
@@ -27,7 +55,7 @@ public class Responder implements User {
      */
     private List<Invoice> Invoices;
 
-
+    private final Profile profile;
 
 
 
@@ -35,7 +63,7 @@ public class Responder implements User {
      * @param Job 
      * @return
      */
-    private boolean AnswerJob(void Job) {
+    private boolean answerJob(Job job) {
         // TODO implement here
         return false;
     }
@@ -44,25 +72,23 @@ public class Responder implements User {
      * @param Match 
      * @return
      */
-    public void addMatch(void Match) {
+    public void addMatch(Match match) {
         // TODO implement here
-        return null;
     }
 
     /**
      * @param Match
      */
-    public void GiveFeedback(void Match) {
-        // TODO implement here
+    public void giveFeedback(Match match) {
+
     }
 
     /**
      * @param Invoice 
      * @return
      */
-    public void AddInvoice(void Invoice) {
+    public void addInvoice(Invoice invoice) {
         // TODO implement here
-        return null;
     }
 
 }

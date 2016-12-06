@@ -17,9 +17,8 @@ public class Notify {
      * @param object 
      * @return
      */
-    public void Notify(void reciver, void object) {
-        // TODO implement here
-        return null;
+    public void Notify(User reciever, Invoice invoice) {
+
     }
 
 }
