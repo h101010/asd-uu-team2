@@ -18,7 +18,7 @@ public class PaymentHandler{
      * @return
      */
     public void pay(Invoice invoice) {
-
+        invoice.pay();
     }
 
 
