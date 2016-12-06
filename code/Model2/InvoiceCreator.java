@@ -9,31 +9,24 @@ public class InvoiceCreator {
     /**
      * Default constructor
      */
+    private List<Invoice> invoiceList;
+    private List<User> userList;
+
     public InvoiceCreator() {
     }
 
-    /**
-     * 
-     */
-    private List<User> UserList;
 
-
-
-
-    /**
-     * @param User 
-     * @return
-     */
-    private Invoice createInvoice(void User) {
-        // TODO implement here
-        return null;
+    public void invoiceTrigger(){
+        for (User user : userList ){
+            invoiceList.add(createInvoice(user));
+        }
+    }
+    private Invoice createInvoice(void user) {
+        Invoice invoice = new Invoice(user);
+        return invoice;
     }
 
-    /**
-     * @param User 
-     * @param Invoice 
-     * @return
-     */
+
     public void Notify.notify(void User, void Invoice) {
         // TODO implement here
         return null;
