@@ -4,7 +4,8 @@
  */
 public class Learning{
 
-
+    private Responder responder;
+    private Matcher matcher = Matcher.getInstance();
 
     private static final Learning learning = new Learning();
     /**
@@ -17,5 +18,7 @@ public class Learning{
     }
 
 
-
+    public Responder getResponder() {
+        return responder;
+    }
 }

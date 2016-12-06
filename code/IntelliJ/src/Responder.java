@@ -17,7 +17,7 @@ public class Responder implements User {
         return profile;
     }
 
-    private boolean answerJob(Job job) {
+    public boolean answerJob(Job job) {
         // TODO implement here
         return false;
     }

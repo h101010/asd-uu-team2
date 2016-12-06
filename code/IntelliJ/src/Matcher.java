@@ -4,6 +4,9 @@
  */
 public class Matcher{
     private static final Matcher matcher = new Matcher();
+    private Learning learning = Learning.getInstance();
+    private InvoiceCreator invoiceCreator = InvoiceCreator.getInstance();
+
     public Matcher() {
     }
     public static Matcher getInstance(){
@@ -11,20 +14,27 @@ public class Matcher{
     }
 
 
-    public Match MatchJob(Job job) {
-        // TODO implement here
-        return null;
+    public Match matchJob(Job job, Requester requester) {
+        boolean answer = false;
+        Responder availableResponder = new Responder();
+        while(!answer){
+            availableResponder = learning.getResponder();
+            answer = sendQuery(job, availableResponder);
+        }
+        return createMatch(job, requester, availableResponder);
     }
 
     private boolean sendQuery(Job job,Responder responder) {
-        // TODO implement here
-        return false;
+        return responder.answerJob(job);
     }
 
     private Match createMatch(Job job, Requester requester, Responder responder) {
         // TODO implement here
         return null;
     }
-
+    private void timeToInvoice(){
+        //TODO timers
+        invoiceCreator.invoiceTrigger();
+    }
 
 }

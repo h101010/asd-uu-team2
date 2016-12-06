@@ -6,6 +6,8 @@ import java.util.*;
  */
 public class InvoiceCreator {
     private static final InvoiceCreator invoiceCreator = new InvoiceCreator();
+    Notify notify = Notify.getInstance();
+
     /**
      * Default constructor
      */
@@ -14,7 +16,7 @@ public class InvoiceCreator {
 
     private InvoiceCreator() {
     }
-    public InvoiceCreator getInstance(){
+    public static InvoiceCreator getInstance(){
         return invoiceCreator;
     }
 
@@ -36,7 +38,6 @@ public class InvoiceCreator {
         }
 
 
-        Notify notify = Notify.getInstance();
         notify.notifyUser(user, invoice);
         return invoice;
     }
