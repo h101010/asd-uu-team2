@@ -14,14 +14,12 @@ public class Feedback {
 
     private Profile creator;
 
-    private Profile recipient;
 
-    public Feedback(Date date, int rating, String comment, Profile creator, Profile recipient) {
-        this.date = date;
+    public Feedback(Profile creator, int rating, String comment) {
+        this.date = new Date();
         this.rating = rating;
         this.comment = comment;
         this.creator = creator;
-        this.recipient = recipient;
     }
 
 
@@ -57,11 +55,4 @@ public class Feedback {
         this.creator = creator;
     }
 
-    public Profile getRecipient() {
-        return recipient;
-    }
-
-    public void setRecipient(Profile recipient) {
-        this.recipient = recipient;
-    }
 }
