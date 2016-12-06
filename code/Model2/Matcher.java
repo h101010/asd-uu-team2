@@ -7,7 +7,7 @@ public class Matcher {
     }
 
 
-    public Match MatchJob(Job job) {
+    public Match  matchJob(Job job) {
         // TODO implement here
         return null;
     }
