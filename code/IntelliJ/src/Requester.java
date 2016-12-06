@@ -10,6 +10,7 @@ public class Requester implements User {
      * Default constructor
      */
     public Requester() {
+        profile = new Profile();
     }
 
     /**
@@ -30,27 +31,14 @@ public class Requester implements User {
     private final Profile profile;
 
 
-
-
-
-    /**
-     * @param Deadline 
-     * @param preferredTime 
-     * @param Price 
-     * @param Description 
-     * @return
-     */
     private Job createJob(Date deadline, Date preferredTime, float price, String description) {
         // TODO implement here
-        Job job = new Job();
+        Job job = new Job(deadline, preferredTime, price, description);
         return job;
     }
 
 
 
-    /**
-     * @param Match
-     */
     public void giveFeedback(Match match) {
         // TODO implement here
     }

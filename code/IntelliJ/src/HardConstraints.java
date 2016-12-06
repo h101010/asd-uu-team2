@@ -7,16 +7,22 @@ public class HardConstraints {
 
     private List<Skills> skillsList;
 
-    public HardConstraints(Date deadline) {
-        this.deadline = deadline;
+
+    public HardConstraints() {
+
     }
 
-    public void AddSkills(String Description) {
+
+    public void addSkills(String Description) {
 
     }
 
     public Date getDeadline() {
         return deadline;
+    }
+
+    public void setDeadline(Date deadline) {
+        this.deadline = deadline;
     }
 
     public List<Skills> getSkillsList() {

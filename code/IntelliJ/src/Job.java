@@ -2,19 +2,18 @@
 import java.util.*;
 
 public class Job {
-    private final HardConstraints hardConstraints;
+    private final HardConstraints hardConstraints = new HardConstraints();
     private SoftConstraints softConstraints;
     private float price;
 
 
     private String description;
 
-    public Job(date deadline,date preferredTime,float price, String description) {
+    public Job(Date deadline, Date preferredTime, float price, String description) {
         this.price = price;
         this.description = description;
 
         if (checkSkills(description)){
-            this.hardConstraints = new HardConstraints();
             this.hardConstraints.setDeadline(deadline);
             this.hardConstraints.addSkills(description);
         }
@@ -46,7 +45,7 @@ public class Job {
         return description;
     }
 
-    public void setDescription(string description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 

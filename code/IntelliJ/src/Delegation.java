@@ -19,7 +19,7 @@ public class Delegation implements Skills {
         this.valid = valid;
     }
 
-    public string getName() {
+    public String getName() {
         return name;
     }
 
