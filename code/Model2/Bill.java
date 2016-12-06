@@ -14,9 +14,9 @@ public class Bill implements Invoice {
 
     private List<Match> jobsList;
 
-    public Bill(float amount, Date date, Requster requster, List<Match> jobsList) {
+    public Bill(float amount, Requster requster, List<Match> jobsList) {
         this.amount = amount;
-        this.date = date;
+        this.date = new Date();
         this.requster = requster;
         this.jobsList = jobsList;
     }
