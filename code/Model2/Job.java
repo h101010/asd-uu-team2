@@ -7,9 +7,9 @@ public class Job {
     private float price;
 
 
-    private string description;
+    private String description;
 
-    public Job(date deadline,date preferredTime,float price, string description) {
+    public Job(date deadline,date preferredTime,float price, String description) {
         this.price = price;
         this.description = description;
 
@@ -28,7 +28,7 @@ public class Job {
 
 
 
-    public boolean checkSkills(string description) {
+    public boolean checkSkills(String description) {
         // TODO implement here
         return false;
     }
@@ -42,7 +42,7 @@ public class Job {
         this.price = price;
     }
 
-    public string getDescription() {
+    public String getDescription() {
         return description;
     }
 

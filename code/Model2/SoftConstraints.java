@@ -9,11 +9,11 @@ public class SoftConstraints {
     public SoftConstraints() {
     }
 
-    public setPreferredTime(Date preferredTime) {
+    public void setPreferredTime(Date preferredTime) {
     	this.preferredTime = preferredTime;
     }
     
-    public getPreferredTime() {
+    public Date getPreferredTime() {
     	return this.preferredTime;
     }
 }

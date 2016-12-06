@@ -15,20 +15,20 @@ public class PersonalDetails {
     /**
      * 
      */
-    private string Email;
+    private String Email;
 
     /**
      * 
      */
-    private string Telephone;
+    private String Telephone;
 
     /**
      * 
      */
-    private string Name;
+    private String Name;
 
 
-    public string getEmail() {
+    public String getEmail() {
         return Email;
     }
 
@@ -36,7 +36,7 @@ public class PersonalDetails {
         Email = email;
     }
 
-    public string getTelephone() {
+    public String getTelephone() {
         return Telephone;
     }
 
