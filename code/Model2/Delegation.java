@@ -27,7 +27,7 @@ public class Delegation implements Skills {
         this.name = name;
     }
 
-    public boolean validateCertificate() {
+    public boolean validate() {
         // TODO implement here
         return false;
     }
