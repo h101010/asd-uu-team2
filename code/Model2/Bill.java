@@ -16,11 +16,11 @@ public class Bill implements Invoice {
 
     private Date dueDate;
 
-    public Bill(float amount, Date dueDate, Requster requster, List<Match> jobsList) {
+    public Bill(float amount, Date dueDate, Requster requster) {
         this.amount = amount;
         this.createdDate = new Date();
         this.requster = requster;
-        this.jobsList = jobsList;
+        this.jobsList = requster.getCompletedJobs();
         this.dueDate = dueDate;
     }
 

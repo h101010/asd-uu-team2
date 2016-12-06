@@ -2,7 +2,7 @@
 import java.util.*;
 
 /**
- * 
+ *
  */
 public class InvoiceCreator {
 
@@ -21,6 +21,7 @@ public class InvoiceCreator {
             invoiceList.add(createInvoice(user));
         }
     }
+
     private Invoice createInvoice(User user) {
         SubscriptionModel subModel =  user.getProfile().getSubscriptionModel();
         Date dueDate = subModel.getDueDate();
