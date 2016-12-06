@@ -22,6 +22,7 @@ public class InvoiceCreator {
         }
     }
     private Invoice createInvoice(void user) {
+        
         Invoice invoice = new Invoice(user);
         return invoice;
     }
