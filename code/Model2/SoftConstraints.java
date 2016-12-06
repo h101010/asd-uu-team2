@@ -1,23 +1,19 @@
 
 import java.util.*;
 
-/**
- * 
- */
+
 public class SoftConstraints {
 
-    /**
-     * Default constructor
-     */
+    private Date preferredTime;
+
     public SoftConstraints() {
     }
 
-    /**
-     * 
-     */
-    private DateTime PreferedTime;
-
-
-
-
+    public setPreferredTime(Date preferredTime) {
+    	this.preferredTime = preferredTime;
+    }
+    
+    public getPreferredTime() {
+    	return this.preferredTime;
+    }
 }

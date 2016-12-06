@@ -1,35 +1,16 @@
 
 import java.util.*;
 
-/**
- * 
- */
+
 public interface SubscriptionModel {
 
-    /**
-     * 
-     */
-    public void Attribute1;
 
-
-    /**
-     * 
-     */
-    public void Operation1();
-
-    /**
-     * 
-     */
-    public void Operation2();
-
-    /**
-     * 
-     */
-    public void Operation3();
-
-    /**
-     * 
-     */
-    public void Operation4();
+    public float calculateAmount(List<Match> listOfMatches) {
+    	return 0;
+    }
+    
+    public Date setDueDate() {
+    	return new Date();
+    }
 
 }
