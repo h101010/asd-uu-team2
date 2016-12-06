@@ -42,7 +42,7 @@ public class Requester implements User {
      */
     private Job createJob(Date deadline, Date preferredTime, float price, String description) {
         // TODO implement here
-        Job job = new Job()
+        Job job = new Job();
         return job;
     }
 

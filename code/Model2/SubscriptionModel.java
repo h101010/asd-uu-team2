@@ -2,15 +2,21 @@
 import java.util.*;
 
 
-public interface SubscriptionModel {
+public class SubscriptionModel {
+    private Date dueDate;
 
+    public SubscriptionModel() {
+    }
 
     public float calculateAmount(List<Match> listOfMatches) {
     	return 0;
     }
-    
-    public Date setDueDate() {
-    	return new Date();
+
+    public Date getDueDate() {
+        return dueDate;
     }
 
+    public void setDueDate(Date dueDate) {
+        this.dueDate = dueDate;
+    }
 }

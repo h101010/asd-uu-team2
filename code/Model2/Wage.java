@@ -15,9 +15,9 @@ public class Wage implements Invoice {
     	this.jobs = jobs;
     }
     
-    public void pay(Invoice invoice) {
+    public void pay() {
     	//Do payment stuff
-        return null;
+
     }
     
     public void setAmount(float amount) {
