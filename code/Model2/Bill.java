@@ -54,7 +54,7 @@ public class Bill implements Invoice {
         this.jobsList = jobsList;
     }
 
-    public void Pay(void Invoice) {
+    public void pay(void Invoice) {
         // TODO implement here
         return null;
     }
