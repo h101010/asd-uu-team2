@@ -1,18 +1,20 @@
 
-import java.util.*;
-
 /**
  * 
  */
 public class Learning{
 
+
+
+    private static final Learning learning = new Learning();
     /**
      * Default constructor
      */
-    public Learning() {
+    private Learning() {
     }
-
-
+    public static Learning getInstance() {
+        return learning;
+    }
 
 
 

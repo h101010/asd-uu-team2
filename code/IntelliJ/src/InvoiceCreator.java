@@ -5,16 +5,18 @@ import java.util.*;
  *
  */
 public class InvoiceCreator {
-
+    private static final InvoiceCreator invoiceCreator = new InvoiceCreator();
     /**
      * Default constructor
      */
     private List<Invoice> invoiceList;
     private List<User> userList;
 
-    public InvoiceCreator() {
+    private InvoiceCreator() {
     }
-
+    public InvoiceCreator getInstance(){
+        return invoiceCreator;
+    }
 
     public void invoiceTrigger(){
         for (User user : userList ){

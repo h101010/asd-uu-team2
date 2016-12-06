@@ -1,12 +1,13 @@
 
-import java.util.*;
-
 /**
  * 
  */
 public class Matcher{
-
+    private static final Matcher matcher = new Matcher();
     public Matcher() {
+    }
+    public static Matcher getInstance(){
+        return matcher;
     }
 
 
