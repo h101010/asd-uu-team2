@@ -9,12 +9,7 @@ public interface Skills {
     /**
      * 
      */
-    private boolean Valid;
 
-    /**
-     * 
-     */
-    public string Name;
 
 
     /**

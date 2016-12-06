@@ -1,56 +1,36 @@
-
 import java.util.*;
 
-/**
- * 
- */
-public class Delegation extends Skills implements Skills, Skills {
+public class Delegation implements Skills {
 
-    /**
-     * Default constructor
-     */
-    public Delegation() {
+    private boolean valid;
+
+    private String name;
+
+    public Delegation(boolean valid, String name) {
+        this.valid = valid;
+        this.name = name;
     }
 
-    /**
-     * 
-     */
-    private boolean Valid;
+    public boolean isValid() {
+        return valid;
+    }
 
-    /**
-     * @return
-     */
+    public void setValid(boolean valid) {
+        this.valid = valid;
+    }
+
+    public string getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public boolean validateCertificate() {
         // TODO implement here
         return false;
     }
 
-    /**
-     * 
-     */
-    public void Operation1() {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
-    public void Operation2() {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
-    public void Operation1() {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
-    public void Operation2() {
-        // TODO implement here
-    }
 
 }
