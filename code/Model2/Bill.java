@@ -8,17 +8,20 @@ public class Bill implements Invoice {
 
     private float amount;
 
-    private Date date;
+    private Date createdDate;
 
     private Requster requster;
 
     private List<Match> jobsList;
 
-    public Bill(float amount, Requster requster, List<Match> jobsList) {
+    private Date dueDate;
+
+    public Bill(float amount, Date dueDate, Requster requster, List<Match> jobsList) {
         this.amount = amount;
-        this.date = new Date();
+        this.createdDate = new Date();
         this.requster = requster;
         this.jobsList = jobsList;
+        this.dueDate = dueDate;
     }
 
 
@@ -30,12 +33,12 @@ public class Bill implements Invoice {
         this.amount = amount;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
     public Requster getRequster() {
@@ -52,6 +55,14 @@ public class Bill implements Invoice {
 
     public void setJobsList(List<Match> jobsList) {
         this.jobsList = jobsList;
+    }
+    
+    public Date getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(Date dueDate) {
+        this.dueDate = dueDate;
     }
 
     public void pay() {
