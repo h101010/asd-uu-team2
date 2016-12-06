@@ -1,35 +1,17 @@
 
 import java.util.*;
 
-/**
- * 
- */
+
 public class Requester implements User {
 
-    /**
-     * Default constructor
-     */
+    private List<Match> OngoingJobs;
+    private List<Match> CompletedJobs;
+    private List<Invoice> Invoices;
+    private final Profile profile;
+    
     public Requester() {
         profile = new Profile();
     }
-
-    /**
-     * 
-     */
-    private List<Match> OngoingJobs;
-
-    /**
-     * 
-     */
-    private List<Match> CompletedJobs;
-
-    /**
-     * 
-     */
-    private List<Invoice> Invoices;
-
-    private final Profile profile;
-
 
     private Job createJob(Date deadline, Date preferredTime, float price, String description) {
         // TODO implement here
@@ -37,24 +19,14 @@ public class Requester implements User {
         return job;
     }
 
-
-
     public void giveFeedback(Match match) {
         // TODO implement here
     }
 
-    /**
-     * @param Match 
-     * @return
-     */
     public void addMatch(Match match) {
         // TODO implement here
     }
 
-    /**
-     * @param Invoice 
-     * @return
-     */
     public void addInvoice(Invoice invoice) {
         // TODO implement here
     }

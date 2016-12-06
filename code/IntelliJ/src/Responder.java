@@ -1,23 +1,39 @@
 
 import java.util.*;
 
-/**
- * 
- */
+
 public class Responder implements User {
 
-    /**
-     * Default constructor
-     */
+    private List<Match> OngoingJobs;
+    private List<Match> CompletedJobs;
+    private List<Invoice> Invoices;
+    private final Profile profile;
+	
     public Responder() {
         profile = new Profile();
     }
+    
+    public Profile getProfile() {
+        return profile;
+    }
 
+    private boolean answerJob(Job job) {
+        // TODO implement here
+        return false;
+    }
 
-    /**
-     * 
-     */
-    private List<Match> OngoingJobs;
+    public void addMatch(Match match) {
+        // TODO implement here
+    }
+
+    public void giveFeedback(Match match) {
+
+    }
+
+    public void addInvoice(Invoice invoice) {
+        // TODO implement here
+    }
+
 
     public List<Match> getOngoingJobs() {
         return OngoingJobs;
@@ -42,55 +58,4 @@ public class Responder implements User {
     public void setInvoices(List<Invoice> invoices) {
         Invoices = invoices;
     }
-
-    public Profile getProfile() {
-        return profile;
-    }
-
-    /**
-     * 
-     */
-    private List<Match> CompletedJobs;
-
-    /**
-     * 
-     */
-    private List<Invoice> Invoices;
-
-    private final Profile profile;
-
-
-
-    /**
-     * @param Job 
-     * @return
-     */
-    private boolean answerJob(Job job) {
-        // TODO implement here
-        return false;
-    }
-
-    /**
-     * @param Match 
-     * @return
-     */
-    public void addMatch(Match match) {
-        // TODO implement here
-    }
-
-    /**
-     * @param Match
-     */
-    public void giveFeedback(Match match) {
-
-    }
-
-    /**
-     * @param Invoice 
-     * @return
-     */
-    public void addInvoice(Invoice invoice) {
-        // TODO implement here
-    }
-
 }
