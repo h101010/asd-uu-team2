@@ -1,34 +1,26 @@
 
 import java.util.*;
 
-/**
- * 
- */
 public class HardConstraints {
 
-    /**
-     * Default constructor
-     */
-    public HardConstraints() {
+    private Date deadline;
+
+    private List<Skills> skillsList;
+
+    public HardConstraints(Date deadline) {
+        this.deadline = deadline;
     }
 
-    /**
-     * 
-     */
-    private DateTime Deadline;
-
-
-
-
-
-
-    /**
-     * @param Description 
-     * @return
-     */
-    public void AddSkills(void Description) {
+    public void AddSkills(String Description) {
         // TODO implement here
         return null;
     }
 
+    public Date getDeadline() {
+        return deadline;
+    }
+
+    public List<Skills> getSkillsList() {
+        return skillsList;
+    }
 }

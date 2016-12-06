@@ -27,8 +27,7 @@ public class Requester implements User {
      */
     private List<Invoice> Invoices;
 
-
-
+    private final Profile profile;
 
 
 
@@ -41,34 +40,18 @@ public class Requester implements User {
      * @param Description 
      * @return
      */
-    private Job createJob(void Deadline, void preferredTime, void Price, void Description) {
+    private Job createJob(Date deadline, Date preferredTime, float price, String description) {
         // TODO implement here
-        return null;
+        Job job = new Job()
+        return job;
     }
 
-    /**
-     * @param Job 
-     * @param Requester 
-     * @return
-     */
-    public Match matcher.MatchJob(void Job, void Requester) {
-        // TODO implement here
-        return null;
-    }
 
-    /**
-     * @param Bill 
-     * @return
-     */
-    public void paymentHandler.PayBill(void Bill) {
-        // TODO implement here
-        return null;
-    }
 
     /**
      * @param Match
      */
-    public void GiveFeedback(void Match) {
+    public void giveFeedback(Match match) {
         // TODO implement here
     }
 
@@ -76,18 +59,43 @@ public class Requester implements User {
      * @param Match 
      * @return
      */
-    public void addMatch(void Match) {
+    public void addMatch(Match match) {
         // TODO implement here
-        return null;
     }
 
     /**
      * @param Invoice 
      * @return
      */
-    public void AddInvoice(void Invoice) {
+    public void addInvoice(Invoice invoice) {
         // TODO implement here
-        return null;
     }
 
+    public List<Match> getOngoingJobs() {
+        return OngoingJobs;
+    }
+
+    public void setOngoingJobs(List<Match> ongoingJobs) {
+        OngoingJobs = ongoingJobs;
+    }
+
+    public List<Match> getCompletedJobs() {
+        return CompletedJobs;
+    }
+
+    public void setCompletedJobs(List<Match> completedJobs) {
+        CompletedJobs = completedJobs;
+    }
+
+    public List<Invoice> getInvoices() {
+        return Invoices;
+    }
+
+    public void setInvoices(List<Invoice> invoices) {
+        Invoices = invoices;
+    }
+
+    public Profile getProfile() {
+        return profile;
+    }
 }
