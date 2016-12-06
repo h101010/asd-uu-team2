@@ -1,15 +1,9 @@
 
 import java.util.*;
 
-/**
- * 
- */
-public class Learning {1} {
+public class Learning {
 
-    /**
-     * Default constructor
-     */
-    public Learning {1}() {
+    public Learning() {
     }
 
 
