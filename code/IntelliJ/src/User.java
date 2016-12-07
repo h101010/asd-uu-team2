@@ -7,4 +7,6 @@ public interface User {
     Profile getProfile();
 
     List<Match> getCompletedJobs();
+
+
 }

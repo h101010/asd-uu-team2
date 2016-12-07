@@ -24,6 +24,7 @@ public class Responder implements User {
 
     public void addMatch(Match match) {
         // TODO implement here
+        OngoingJobs.add(match);
     }
 
     public void giveFeedback(Match match) {
@@ -32,6 +33,7 @@ public class Responder implements User {
 
     public void addInvoice(Invoice invoice) {
         // TODO implement here
+        Invoices.add(invoice);
     }
 
 

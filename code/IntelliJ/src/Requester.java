@@ -15,16 +15,21 @@ public class Requester implements User {
 
     private Job createJob(Date deadline, Date preferredTime, float price, String description) {
         // TODO implement here
-        Job job = new Job(deadline, preferredTime, price, description);
-        return job;
+        return new Job(deadline, preferredTime, price, description, this);
+    }
+
+    public void submitJob(Job job) {
+        Matcher matcher = Matcher.getInstance();
+        addMatch(matcher.matchJob(job, this));
     }
 
     public void giveFeedback(Match match) {
         // TODO implement here
     }
 
-    public void addMatch(Match match) {
+    private void addMatch(Match match) {
         // TODO implement here
+        OngoingJobs.add(match);
     }
 
     public void addInvoice(Invoice invoice) {
@@ -58,4 +63,11 @@ public class Requester implements User {
     public Profile getProfile() {
         return profile;
     }
+
+    public void payBill(Invoice invoice){
+        PaymentHandler paymentHandler = PaymentHandler.getPaymenthandler();
+        paymentHandler.pay(invoice);
+    }
+
+
 }
