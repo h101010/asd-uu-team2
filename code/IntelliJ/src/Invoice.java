@@ -5,6 +5,6 @@ import java.util.*;
  */
 public interface Invoice {
 
-    public void pay();
+    void pay();
 
 }
