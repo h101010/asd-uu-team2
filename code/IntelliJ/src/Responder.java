@@ -27,8 +27,8 @@ public class Responder implements User {
         OngoingJobs.add(match);
     }
 
-    public void giveFeedback(Match match) {
-
+    public void giveFeedback(Match match, int rating, String comment) {
+        match.CreateFeedback(this, rating, comment);
     }
 
     public void addInvoice(Invoice invoice) {

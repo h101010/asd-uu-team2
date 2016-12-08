@@ -4,7 +4,7 @@ import java.util.*;
 public class PaymentHandler{
     private static final PaymentHandler paymenthandler = new PaymentHandler();
 
-    public PaymentHandler() {
+    private PaymentHandler() {
     }
 
     public static PaymentHandler getPaymenthandler() {

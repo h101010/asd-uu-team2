@@ -23,8 +23,9 @@ public class Requester implements User {
         addMatch(matcher.matchJob(job, this));
     }
 
-    public void giveFeedback(Match match) {
+    public void giveFeedback(Match match, int rating, String comment) {
         // TODO implement here
+        match.CreateFeedback(this, rating, comment);
     }
 
     private void addMatch(Match match) {

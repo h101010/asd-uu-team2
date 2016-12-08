@@ -7,7 +7,7 @@ public class Matcher{
     private Learning learning = Learning.getInstance();
     private InvoiceCreator invoiceCreator = InvoiceCreator.getInstance();
 
-    public Matcher() {
+    private Matcher() {
     }
     public static Matcher getInstance(){
         return matcher;
