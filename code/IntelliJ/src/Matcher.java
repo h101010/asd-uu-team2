@@ -16,7 +16,7 @@ public class Matcher{
 
     public Match matchJob(Job job, Requester requester) {
         boolean answer = false;
-        Responder availableResponder = new Responder();
+        Responder availableResponder = null;
         while(!answer){
             availableResponder = learning.getResponder();
             answer = sendQuery(job, availableResponder);
@@ -30,7 +30,7 @@ public class Matcher{
 
     private Match createMatch(Job job, Requester requester, Responder responder) {
         // TODO implement here
-        return null;
+        return new Match(job, requester, responder);
     }
     private void timeToInvoice(){
         //TODO timers
